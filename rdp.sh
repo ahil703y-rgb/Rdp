@@ -12,9 +12,9 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo
-echo "=== 📦 Update & Install Docker Compose ==="
-apt update -y
+echo "=== 📦  Install Docker Compose ==="
 apt install docker-compose -y
+
 
 systemctl enable docker
 systemctl start docker
